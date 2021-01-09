@@ -1,14 +1,18 @@
 # Colab-Notebooks-for-Training-Models
 
 ## Purpose of this repo
-This repo is meant to store any notebooks we use to train object detection models and to run experiments with synthetic data.
+This repo is meant to store any notebooks we use to run experiments with synthetic data.
 
 ## How to use this
 The goal is to keep this repo clutter-free and simple to use. That means having only one notebook (which would be the most up-to-date version) per experiment. Make sure to either tell everyone what you are going to push or make a pull request so the whole team is aware of what changes are being made.
 
 ## Experiments
+### Main Experiment
 The main experiment is training the YOLOv3 object detection model on a baseline dataset of overhead images of wind turbines, then adding synthetic overhead images of wind turbines to the training set, and observing how the performance of the model changes. The performance is evaluated using a testing set that remains the same. The baseline dataset and supplemental synthetic images are located [here](https://figshare.com/projects/Adding_Synthetic_Imagery_for_Object_Detection_on_Overhead_Images_of_Wind_Turbines/96131).
 
 The images for the basline dataset were collected from [NAIP Imagery](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) using primarily the [Power Plant Satellite Imagery Dataset](https://figshare.com/articles/dataset/Power_Plant_Satellite_Imagery_Dataset/5307364). Additional images were collected using [Earth OnDemand](https://earthondemand.astraea.earth/). The wind turbines were hand-labeled in each image to be the ground truth.
 
 For the synthetic images, we use CityEngine to uniformly generate models of wind turbines on top of background images. The background images are NAIP images collected from [Earth OnDemand](https://earthondemand.astraea.earth/). We use a script to randomly pick background images and generate models, and then position the virtual camera overhead in multiple locations and save the images. This process is repeated (with the same seed) without background images and where the wind turbine models are colored black to generate ground truth labels for the synthetic images.
+
+### Second Experiment
+We are also trying to look at the performance of the model on different types of wind turbines. In California and some of Arizona, there are relatively small wind turbines that are much more difficult to locate from overhead imagery. For this experiment, we are trying to observe the baseline performance on both small and large wind turbines and then see how both of those performances change when we add in synthetic imagery. In addition, we can add models of small wind turbines to our synthetic imagery to our training set and see how the performance on small wind turbines change.
