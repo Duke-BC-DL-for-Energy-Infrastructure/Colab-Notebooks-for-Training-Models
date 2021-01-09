@@ -2,8 +2,14 @@
 ## Purpose of this repo
 This repo is meant to store any notebooks we use to run experiments with synthetic data.
 
-## Downloading the notebooks off the repo
-To download a notebook, go the repo and click on the notebook. Then select raw and either 1) right click and 'Save Page As...' or 2) press <kbd>Ctrl</kbd> + <kbd>s</kbd> or <kdb>⌘</kbd> + <kbd>s</kbd> on mac and then select a location to save it. Make sure it has the extension '.ipynb'. Then, you can upload it to Google Colab or use as a Jupyter Notebook.
+## Using the notebooks
+There are a couple options, including downloading, accessing directly through Google Colab, or cloning the repo.
+
+To download a notebook, go the repo and click on the notebook. Then select raw and then either 1) right click and 'Save Page As...' or 2) press <kbd>Ctrl</kbd> + <kbd>s</kbd> or <kdb>⌘</kbd> + <kbd>s</kbd> on mac and then select a location to save it. Make sure it has the extension '.ipynb'. Then, you can upload it to Google Colab or use as a Jupyter Notebook.
+
+To access through [Google Colab](https://colab.research.google.com/), open up the webiste and a window should appear with recent notebooks listed. Click GitHub on the menu bar and copy and paste this link: https://github.com/Duke-BC-Deep-Learning-for-Energy-Access/Colab-Notebooks-for-Training-Models. The notebooks in the repo should show up and you can then select on to open it. If you want to push to this repo after editing the notebook (also make sure to tell people if you do), go to File -> Save a Copy in GitHub and then change the commit message to be descriptive. The information for the repo, branch, and name should be correct (unless you want to push to a different branch). Once you hit 'OK', the changes should be made on the remote repo for everyone else to see.
+
+Alternatively, you could clone the repo on your local computer or on a remote machine and then push it after you edit it.
 
 ## Organization
 The goal is to keep this repo clutter-free and simple to use. That likely means having only one notebook (which would be the most up-to-date version) per experiment. Make sure to either tell everyone what you are going to push or make a pull request so the whole team is aware of what changes are being made.
