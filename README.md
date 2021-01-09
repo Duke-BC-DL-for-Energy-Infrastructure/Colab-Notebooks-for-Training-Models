@@ -1,10 +1,12 @@
 # Colab-Notebooks-for-Training-Models
-
 ## Purpose of this repo
 This repo is meant to store any notebooks we use to run experiments with synthetic data.
 
-## How to use this
-The goal is to keep this repo clutter-free and simple to use. That means having only one notebook (which would be the most up-to-date version) per experiment. Make sure to either tell everyone what you are going to push or make a pull request so the whole team is aware of what changes are being made.
+## Downloading the notebooks off the repo
+To download a notebook, go the repo and click on the notebook. Then select raw and either 1) right click and 'Save Page As...' or 2) press <kbd>Ctrl</kbd> + <kbd>s</kbd> or <kdb>⌘</kbd> + <kbd>s</kbd> on mac and then select a location to save it. Make sure it has the extension '.ipynb'. Then, you can upload it to Google Colab or use as a Jupyter Notebook.
+
+## Organization
+The goal is to keep this repo clutter-free and simple to use. That likely means having only one notebook (which would be the most up-to-date version) per experiment. Make sure to either tell everyone what you are going to push or make a pull request so the whole team is aware of what changes are being made.
 
 ## Experiments
 ### Main Experiment
